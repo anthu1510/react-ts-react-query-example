@@ -8,6 +8,6 @@ interface Post {
 }
 
 export const getPosts = async (): Promise<Post[]> => {
-    const { data } = await axios.get("/postss");
+    const { data } = await axios.get("/posts");
     return data;
 }
